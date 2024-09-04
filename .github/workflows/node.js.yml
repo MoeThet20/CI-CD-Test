@@ -40,6 +40,6 @@ jobs:
           sshpass -p $PASSWORD ssh -o StrictHostKeyChecking=no $USER@$SERVER_IP << 'EOF'
             cd /var/www/your-app-directory
             git pull origin master
-            npm install --production
+            npm install
             pm2 restart all
           EOF
