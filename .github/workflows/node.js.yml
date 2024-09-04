@@ -38,7 +38,7 @@ jobs:
           PASSWORD: ${{ secrets.PASSWORD }}
         run: |
           sshpass -p $PASSWORD ssh -o StrictHostKeyChecking=no $USER@$SERVER_IP << 'EOF'
-            cd /var/www/your-app-directory
+            cd CI-CD-Test
             git pull origin master
             npm install
             pm2 restart all
