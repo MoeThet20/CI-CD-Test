@@ -41,5 +41,6 @@ jobs:
             cd CI-CD-Test
             git pull origin master
             npm install
+            cd ..
             pm2 restart all
           EOF
