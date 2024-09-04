@@ -42,5 +42,5 @@ jobs:
             git pull origin master
             npm install
             cd ..
-            pm2 restart all
+            sudo reboot
           EOF
